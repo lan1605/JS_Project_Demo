@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="container-top">
+          <div class="container-top--left">
+            <i class="material-icons">expand_more</i>
+          </div>
+          <div class="container-top--center">Now Playing</div>
+          <div class="container-top--right">
+            <i class="material-icons">more_horiz</i>
+          </div>
+        </div>
+        <div class="container-middle">
+          <img src="./images/doi-minh-chuotsamset.jpg" class="music-img" />
+          <div class="music-info">
+            <div class="music-info--title">Đôi mình</div>
+            <div class="music-info--artist">chuotsamset ⚡️</div>
+            <audio
+              src="./music/chuotsamset⚡️ _đôi mình.mp3"
+              class="music-audio"
+            ></audio>
+          </div>
+        </div>
+        <div class="container-bottom">
+          <div class="duration">
+            <div class="progress-bar"></div>
+            <div class="duration-time">
+              <div class="time" id="current">-:--</div>
+              <div class="time" id="duration">-:--</div>
+            </div>
+          </div>
+          <div class="options">
+            <div class="option-btn option-replay">
+              <span class="material-icons repeat-plist">repeat</span>
+            </div>
+            <div class="option-btn option-prev">
+              <span class="material-icons" id="prev">skip_previous</span>
+            </div>
+            <div class="option-btn option-play">
+              <span class="material-icons" id="play">play_arrow</span>
+            </div>
+            <div class="option-btn option-next">
+              <span class="material-icons" id="next">skip_next</span>
+            </div>
+            <div class="option-btn option-list">
+              <span class="material-icons" id="list-music">queue_music</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="list-music">
+        <div class="list-music--title">
+          <div class="list-music--text">
+            <p class="material-icons">queue_music</p>
+            <span>Playlist</span>
+          </div>
+          <div class="material-icons close-list">close</div>
+        </div>
+        <div class="music-items">
+          <div class="music-item">
+            <div class="music-item--info">
+              <img
+                src="./images/doi-minh-chuotsamset.jpg"
+                alt=""
+                class="music-item--img"
+              />
+              <div>
+                <div class="music-item--name">Đôi mình</div>
+                <div class="music-item--artist">chuotsamset ⚡️</div>
+              </div>
+            </div>
+            <div class="music-item--playing">Playing now</div>
+          </div>
+          <div class="music-item">
+            <div class="music-item--info">
+              <img
+                src="./images/kho-bau-danh-roi-tlinh.jpg"
+                alt=""
+                class="music-item--img"
+              />
+              <div>
+                <div class="music-item--name">Kho báu đánh rơi</div>
+                <div class="music-item--artist">Tlinh - GreyD</div>
+              </div>
+            </div>
+            <div class="music-item--playing">Play</div>
+          </div>
+          <div class="music-item">
+            <div class="music-item--info">
+              <img src="./images/soda-mck.jpg" alt="" class="music-item--img" />
+              <div>
+                <div class="music-item--name">Soda</div>
+                <div class="music-item--artist">MCK</div>
+              </div>
+            </div>
+            <div class="music-item--playing">Play</div>
+          </div>
+          <div class="music-item">
+            <div class="music-item--info">
+              <img
+                src="./images/thoi-em-dung-di-mck.jpg"
+                alt=""
+                class="music-item--img"
+              />
+              <div>
+                <div class="music-item--name">Thôi em đừng đi</div>
+                <div class="music-item--artist">MCK - Trung Trần</div>
+              </div>
+            </div>
+            <div class="music-item--playing">Play</div>
+          </div>
+          <div class="music-item">
+            <div class="music-item--info">
+              <img
+                src="./images/tiep-dat-lowg-thang.jpg"
+                alt=""
+                class="music-item--img"
+              />
+              <div>
+                <div class="music-item--name">Tiếp đất</div>
+                <div class="music-item--artist">LowG - Thắng</div>
+              </div>
+            </div>
+            <div class="music-item--playing">Play</div>
+          </div>
+        </div>
+      </div>
+      <div class="backdrop"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
